@@ -1,4 +1,4 @@
-package config_manager
+package config_manager_example
 
 import (
 	"fmt"

@@ -5,11 +5,11 @@ import (
 	"time"
 )
 
-// CreateConfigManager 创建ConfigManager对象的工厂函数，
+// CreateConfigManagerType 创建ConfigManager对象的工厂函数的类型，
 // configType是配置文件类型，可选json，yaml，下层用的是 github.com/spf13/viper包，更多支持的文件类型可去它文档查看
 // configPath是配置文件所在目录，configName是配置文件名（不包含后缀），程序会自动扫描configPath包括的所有目录
 // 但程序只会添加一个文件并读取文件里的配置，所以一个 ConfigManager 对象只能读取一个配置文件
-type CreateConfigManager func(configType string, configPath []string, configName string) (ConfigManagerInterface, error)
+type CreateConfigManagerType func(configType string, configPath []string, configName string) (ConfigManagerInterface, error)
 
 // ConfigManagerInterface 是ConfigManager的借口，定义了所有会用到的方法
 type ConfigManagerInterface interface {
