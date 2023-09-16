@@ -15,7 +15,7 @@
 - 自动将配置项写入缓存，提高配置项查询速率
 - 自动监听配置文件变化，自动更新配置项查询结果，可以添加一个或多个钩子函数处理文件变化事件
 
-工具类所在目录为[/config_manager](./config_manager)，使用样例代码位于[/examples/config_manager_example](./examples/config_manager_example)
+工具类实现代码位于[/config_manager](./config_manager)，使用样例代码位于[/examples/config_manager_example](./examples/config_manager_example)
 
 ### search
 
@@ -25,6 +25,4 @@
 - 查找最值元素，最值的定义由用户传入的比较函数决定，可以是最大值、最小值、最大的绝对值、最长的字符串等等（时间复杂度O(n*m)，m是比较函数的时间复杂度）
 - 使用泛型技术，支持各种数据类型的查找
 
-由于1.18泛型不支持结构体成员方法，所以[search](./search)目录下所有函数都是普通的函数，不是成员函数。
-
-使用样例代码为与[/examples/search_example](./examples/search_example)
+1.18泛型不支持结构体方法，所以就直接写成普通函数的形式，工具函数实现代码位于[/search](./search)，使用样例代码位于[/examples/search_example](./examples/search_example)
