@@ -1,0 +1,7 @@
+{
+  "schools": ["collageA", "collageB"],
+  "student": {
+    "name": "luan",
+    "age": 22
+  }
+}
